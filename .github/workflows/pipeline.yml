@@ -2,9 +2,9 @@
 name: Execucao de testes
 
 # Momento que será executada
-on: push
-  # pull_request:
-    # braches: [master]
+on: 
+  pull_request:
+    branches: [master]
 # O que vai ser feito na Pipeline
 # Só tem um job: Rodar os teste
 jobs:
