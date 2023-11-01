@@ -19,7 +19,7 @@ describe('Desafio', () => {
         cy.get('.account_form > h3').should('be.visible').should('have.text', 'Cadastro de usuário')
         cy.get('#user').type(nome)
         cy.get('#btnRegister').click()
-        cy.get('#errorMessageFirstName').should('be.visible').should('have.text', 'O campo e-mai deve ser prenchido corretamente')
+        cy.get('#errorMessageFirstName').should('be.visible').should('have.text', 'O campo e-mail deve ser prenchido corretamente')
     })
     it('Validar Campo e-mail inválido', () => {
         cy.visit('/')
