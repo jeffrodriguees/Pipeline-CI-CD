@@ -18,7 +18,7 @@ jobs:
         uses: actions/checkout@v3
 
       #clone do projeto
-      - name: Mensagem tela
+      - name: Instalar Dependências
         run: npm install
      
         #execução e config do projeto
@@ -27,4 +27,4 @@ jobs:
         with: 
           record: true
         env: 
-          CYPRESS_RECORD_KEY: ${{secrets.CYPRESS_RECORD_KEY}}
+          CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
