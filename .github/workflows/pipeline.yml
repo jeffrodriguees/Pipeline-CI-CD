@@ -22,8 +22,8 @@ jobs:
         run: npm install
      
         #execução e config do projeto
-      - name: Run testes
-        uses: cypress-io/github-actions@v5
+      - name: Cypress run
+        uses: cypress-io/github-action@v6
         with: 
           record: true
         env: 
