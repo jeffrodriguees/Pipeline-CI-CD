@@ -13,18 +13,21 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      #clone do projeto
-      - name: Checkout/Clone do projeto
-        uses: actions/checkout@v4
-
-      #clone do projeto
       - name: Instalar Dependências
         run: npm install
+
+      #clone do projeto
+      # - name: Checkout/Clone do projeto
+      #   uses: actions/checkout@v3
+
+      # #clone do projeto
+      # - name: Instalar Dependências
+      #   run: npm install
      
-        #execução e config do projeto
-      - name: Run testes
-        uses: cypress-io/github-actions@v5
-        with: 
-          record: true
-        env: 
-          CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
+      #   #execução e config do projeto
+      # - name: Run testes
+      #   uses: cypress-io/github-actions@v5
+      #   with: 
+      #     record: true
+      #   env: 
+      #     CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
