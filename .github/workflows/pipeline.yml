@@ -12,13 +12,10 @@ jobs:
     # Maquina que será executado
     runs-on: ubuntu-latest
 
-    steps:
-      - name: Instalar Dependências
-        run: npm install
-
+    steps:      
       #clone do projeto
-      # - name: Checkout/Clone do projeto
-      #   uses: actions/checkout@v3
+      - name: Checkout/Clone do projeto
+        uses: actions/checkout@v3
 
       # #clone do projeto
       # - name: Instalar Dependências
