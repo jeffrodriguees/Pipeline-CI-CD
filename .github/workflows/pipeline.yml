@@ -16,6 +16,10 @@ jobs:
       #clone do projeto
       - name: Checkout/Clone do projeto
         uses: actions/checkout@v3
+
+      #clone do projeto
+      - name: Mensagem tela
+        run: npm install
      
         #execução e config do projeto
       - name: Run testes
